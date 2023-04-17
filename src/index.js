@@ -6,6 +6,7 @@ import AboutScreen from './screens /AboutScreen';
 import ContactScreen from './screens /ContactScreen';
 import HomeScreen from './screens /HomeScreen';
 import LoginScreen from './screens /LoginScreen';
+import RMGameScreen from './screens /RMGameScreen';
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -17,6 +18,7 @@ export default function RootNavigation() {
         <Tab.Screen name="AboutScreen" component={AboutScreen} />
         <Tab.Screen name="ContactScreen" component={ContactScreen} />
         <Tab.Screen name="LoginScren" component={LoginScreen} />
+        <Tab.Screen name="RMGameScreen" component={RMGameScreen} />
       </Tab.Navigator>
     );
   }

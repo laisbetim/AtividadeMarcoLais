@@ -12,6 +12,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import LoginScreen from "./src/screens /LoginScreen";
+import RMGameScreen from "./src/screens /RMGameScreen";
 
 function Feed() {
   return (
@@ -82,6 +83,20 @@ export default function Apps() {
         <Tab.Screen
           name="Profile"
           component={Profile}
+          options={{
+            tabBarLabel: "Profile",
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons
+                name="account"
+                color={color}
+                size={size}
+              />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="RMGameScreen"
+          component={RMGameScreen}
           options={{
             tabBarLabel: "Profile",
             tabBarIcon: ({ color, size }) => (
